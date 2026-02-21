@@ -1,7 +1,7 @@
 const btn=document.getElementById("themeBtn")
 
-btn.addEventListener("click", () ={
-    document.body.classlist. toggle ("dark");
+btn.addEventListener("click", () =>{
+    document.body.classList.toggle("dark");
     if(document.body.classlist.contains("dark")){
         btn.textContent= "modo claro"
 
