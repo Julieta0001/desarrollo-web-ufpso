@@ -6,7 +6,7 @@
         <router-link class="nav-link" :to="{ name: 'ProductList' }">Productos</router-link>
       </li>
       <li class="nav-item">
-        <a @click="logout" class="nav-link">Cerrar sesión</a>
+        <a @click="logout" class="nav-link" style="cursor: pointer;">Cerrar sesión</a>
       </li>
     </ul>
   </nav>
@@ -18,7 +18,7 @@ export default {
   methods: {
     logout() {
       localStorage.removeItem('logueado')
-      this.$router.push('/')
+      this.$router.push({ name: 'Login' }) // <-- Te redirige al login de forma segura
     }
   },
 };
